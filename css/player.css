@@ -1,0 +1,75 @@
+#container{
+    padding: 10px;
+    width: 50%;
+    margin-left: 23em;
+}
+
+#playButtons, #nextButtons
+{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+#myVideo{
+    width: 100%;
+}
+
+#vidNUM{
+    float: right;
+}
+
+button{
+    width: 100%;
+}
+
+
+
+  
+  #container h1 {
+    color: #5e7f57;
+    padding: 100px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 550px;
+  }
+  
+  #playButton {
+    padding: 10px;
+    border: 1px solid #5e7f57;
+    border-radius: 1px;
+    margin-bottom: 20px;
+  }
+  
+  #rewindButton {
+    padding: 10px;
+    border: 1px solid #5e7f57;
+    border-radius: 1px;
+    margin-bottom: 20px;
+  }
+  
+  #nextButtons {
+    padding: 10px;
+   
+    margin-bottom: 20px;
+  }
+  
+  #myVideo {
+    width: 100%;
+  }
+  
+  #vidNum {
+    float: right;
+  }
+  
+  button {
+    width: 30%;
+    color: #fff;
+    background-color: #5e7f57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  

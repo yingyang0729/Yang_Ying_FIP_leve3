@@ -1,0 +1,24 @@
+{
+    "CaptAmerica": {
+        "name": "2023 MINI COOPER S 3 DOOR",
+        "id": "$39,756",
+        "lbBG": "Cap_LB_Bg.png",
+        "biopic": "cap.jpg",
+        "bio": "Expressive and self assured, the new MINI 3 door is a true original – combining 60+ years of convention-defying ideas with modern touches and practical features. Iconic by design and urban by nature, it’s made to stand out as you uncover new corners of your city. And with a distinct go-kart feel and plenty of power to boot, you’re sure to find something exciting at every turn."
+    },
+    
+    "Thor": {
+        "name":"2023 MINI JOHN COOPER WORKS 3 DOOR",
+        "id":"$50,156",
+        "lbBG": "Thor_LB_Bg.png",
+        "biopic":"thor.jpg",
+        "bio": "It’s everything you love about MINI…and more. Thanks to its unique layout and low centre of gravity, the MINI 5 door is ready to deliver the same corner-carving agility that made its 3-door brother famous. But with more doors, headroom, legroom, and cargo room, it may be the slightly better choice for anyone leading a slightly fuller life."
+    },
+    "Widow": {
+        "name":"2023 MINI COOPER S CONVERTIBLE",
+        "id":"$46,356",
+        "lbBG": "BlackWidow_LB_Bg.png",
+        "biopic":"widow.jpg",
+        "bio": "Meet the MINI Convertible – the most open-minded member of the MINI family. Featuring our signature 3-in-1 soft top roof and a refined interior with comfortable seating for four, it’s always ready for your next open-air adventure. And with a lively Twin Power Turbo engine that can hit 100 km/h in a blistering 6.3 seconds (in the John Cooper Works variant), it’s sure to deliver a few hair-raising thrills along the way. Discover the MINI Convertible today, and see the road in a whole new light."
+    }
+  }

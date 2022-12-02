@@ -1,0 +1,39 @@
+{
+    "Graphic": {
+        "topic":"Graphic Design",
+        "value":"My Favorite",
+        "text":" I like design and I am so interested in studying many software. I want to learn some new technology to catch up the society. I think I will apply those design skills in my future job..",
+        "photo":"design.jpg"
+    },
+    
+    
+    "Education": {
+        "topic":"Education",
+        "value":"My Strength Area",
+        "text":"I will be your professional consultant in educational field. No matter how you want to run in educational field, I can provide my experted skills for you.",
+        "photo":"education.jpg"
+    },
+
+    "Video": {
+        "topic":"Video Design",
+        "value":"My Passion",
+        "text":"I have a good feeling for dynamic images or videos, because I have a good feeling for music or shots. I have done screenwriting for a long time in the past, and I have a good musical foundation. So the video I edited has a good visual sense. This is one of my best skills.",
+        "photo":"video.jpg"
+    },
+
+    "Writing": {
+        "topic":"Writing",
+        "value":"My Excellent",
+        "text":"I am goot at English writing and the speed of my writing is the same speed as my mother language. I also got 2 years working experience as an editor.",
+        "photo":"writing.jpg"
+    },
+
+    "Marketing": {
+        "topic":"My Gift",
+        "value":"My future main job",
+        "text":"I have talent on marketing because my family members have so many businessmen. I have taken the Business-Marketing at Fanshawe. My marketing thinking can help you look for your target groups in for selling your products.",
+        "photo":"marketing.jpg"
+    }
+
+    }
+  

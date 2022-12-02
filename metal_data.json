@@ -1,0 +1,24 @@
+{
+    "gold": {
+        "topic": "Gold Package",
+        "price": "$10000/Month",
+        "lbBG": "Gold_LB_Bg.png",
+        "metalpic": "gold.jpg",
+        "infor": "Our company provide you with good service for your website design and maintain. We can design two new pictures for your website per week."
+    },
+    
+    "silver": {
+        "topic":"Silver Package",
+        "price":"$2400/Month",
+        "lbBG": "Silver_LB_Bg.png",
+        "metalpic":"silver.jpg",
+        "infor": "Our company provide you with good service for your website design and maintain. We can design two new pictures for your website per month.."
+    },
+    "bronze": {
+        "topic":"Bronze Package",
+        "price":"$300/Month",
+        "lbBG": "bronze_LB_Bg.png",
+        "metalpic":"bronze.jpg",
+        "infor": "Our company provide you with good service for your website design and maintain. We can design a new picture for your website per month."
+    }
+  }

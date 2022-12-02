@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/modules/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body class="skin">
+    <p style="text-align: center;">
+        <object  data="images/Y_logo.svg" type="image/svg+xml" width="600px"></object>
+    </p>
+    <nav class="desktop"  id="navDesktop">
+        <h2 class="hidden">Main Navigation Desktop</h2>
+        
+        <ul>
+            <li><a href="Home.html" color="#5e7f57">HOME</a></li>
+            <li><a class="active" href="About.html">ABOUT</a></li>
+            <li><a href="Artworks.html">ARTWORKS</a></li>
+            <li><a href="package.html">PACKAGE</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+        
+    </nav>
+    <main class="teamText"  id="app"><!--------vue will attach--->
+        
+        <div class="hero">
+            <h1 class="teamTitle">My Favorite thing</h1>
+            <h2>{{ welcome }}</h2>
+    
+            <p>{{ topic }}</p>
+            <ul>
+                <li v-for="member in member">{{ member }}</li>
+            </ul>
+            <a class="teamText" href="./Contact.html">
+                <button class="close" @click="logicbutton">Contact Me</button>
+            </a>
+        </div>    
+        
+        <br>
+
+        <div class="prductDescNew">   
+            <section class="productDescNew" v-for="member in remoteData">
+                <!----<pre>{{ member }}</pre>--->
+                <h2>{{ member.topic }}</h2>
+                <h3>{{ member.value }}</h3>
+                <p>{{ member.text }}</p>
+                
+    
+                <img :src='"images/" + member.photo' alt="member.photo" class="roundShadowNew">
+            </section>
+        </div>
+        
+    </main>
+
+    <footer id="footer">
+        <h2 class="hidden">Footer</h2>
+        <div class="footer">
+        <p>
+          All prices and services on this website and in our reservation 
+          system are based on conditions at the time of publishing and are subject to change.<br> 
+          Please call to confirm services, availability and pricing.
+          <br><br> ©2022 Ying Yang  Digital Design Inc. All Rights Reserved. Privacy Policy
+        </p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script src="js/main_About.js" type="module" defer></script>
+    
+
+</body>
+
+</html>

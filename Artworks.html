@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>"My Artworks"</title>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://unpkg.com/vue-router@4"></script>
+        <link rel="stylesheet" href="sass/modules/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <title>Artworks</title>
+    </head>
+    <body>
+        <header>
+            <p style="text-align: center;">
+                <object  data="images/Y_logo.svg" type="image/svg+xml" width="600px"></object>
+            </p>
+            <h1 class="hidden">Artworks</h1>
+            <nav class="desktop"  id="navDesktop">
+                <h2 class="hidden">Main Navigation Desktop</h2>
+                
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a class="active" href="About.html">ABOUT</a></li>
+                    <li><a href="Artworks.html">ARTWORKS</a></li>
+                    <li><a href="package.html">PACKAGE</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+                
+            </nav>
+              
+    
+        </header>
+
+        <div  id="app">
+            <h1 class="teamTitle">My Graphic Artworks</h1>
+            <div id="ourTeamD">
+                <div class="teamImagesD">
+                    <p class="teamTitle" >I list my recent artworks below.</you></p>
+                        
+                    <div class="teamText" >
+                        <router-link to="/">Design 1-Cosmetic 1</router-link><br>
+                        <router-link to="/marketing">Design 2-Cosmetic 2</router-link><br>
+                        <router-link to="/writing">Design 3-Beer</router-link><br>
+                    </div>
+                </div>
+            </div>     
+            <router-view></router-view>
+        </div>
+
+        <div>
+            <section class="mobile">
+                <div class="ourTeamM">
+                    <button class="arrowleft">
+                        <img src="images/SVG/arrowleft.svg" alt="arrow icon">
+                    </button>
+                    <div class="slider">
+                        <ul class="slide">
+                           <li class="professional current">
+                            <h3 class="teamTitleM">Happy</h3>
+                            <img src="images/low/happy.jpg" alt="designer">
+                            <p>My design make you happy and relax your stressful.</p>
+                           </li>
+                           <li class="professional">
+                            <h3 class="teamTitleM">Simple</h3>
+                            <img src="images/low/simple.jpg" alt="developer">
+                            <p>Modern, Simple, Soft and feminization are my design style.</p>
+                           </li>
+                           <li class="professional">
+                            <h3 class="teamTitleM">Target</h3>
+                            <img src="images/low/target.jpg" alt="ying">
+                            <p>My artworks are matching marketing needs and expand the potential customers for you.</p>
+                           </li>
+                        </ul>
+                    </div>
+                    <button class="arrowRight">
+                        <img src="images/SVG/arrowright.svg" alt="arrow icon">
+                    </button>
+            </section>
+    
+            <section class="desktop" id="team" >
+                <div id="ourTeamD">
+                    <div class="teamImagesD">
+                        <h3 class="teamTitle">Happy</h3>
+                        <img src="images/high/happy.jpg" alt="photo Cris" id="cris"/>
+                        <p>My design make you happy and<br>relax your stressful. </p>
+                    </div>
+                    <div class="teamImagesD">
+                        <h3 class="teamTitle">Simple</h3>
+                        <img src="images/high/simple.jpg" alt="photo Liz" id="liz"/>
+                        <p>Modern, Simple, feminization and <br>Soft are my design style.</p>
+                           
+                    </div>
+                    <div class="teamImagesD">
+                        <h3 class="teamTitle">Target</h3>
+                        <img src="images/high/target.jpg" alt="photo Ying" id="ying"/>
+                        <p>My artworks are matching marketing<br>needs for you..</p>
+                          
+                    </div>
+       
+                </div>
+            </section>
+    
+            <div class="teamText">
+                <button class="close">CLOSE</button>
+             <div  class="cris">
+                <h3 class="teamTitle blue">Happy and Relax</h3>
+                <p>
+                    My design is full of lighthearted feeling. I don't really like to use too strong colors or too dark tones. But I like that the whole design makes you visually comfortable and makes you feel very aesthetic. 
+                </p>
+             </div>
+             <div class="liz">
+                <h3 class="teamTitle blue">sleeping</h3>
+                <p>
+                    My artworks tend to be simple style because I do not like so many lines and create a very simple and clear style for people. After my clients receive my design, they will remember and be attracted by the clean feel.
+                </p>
+             </div>
+             <div class="ying">
+                <h3 class="teamTitle blue">Talking</h3>
+                <p>
+                    My design caters for all clients. And all clients can tell me more details about their target groups. I want to provide a very good service for you.
+                </p>
+             </div> 
+            </div>
+        </div>
+
+        <footer id="footer">
+            <h2 class="hidden">Footer</h2>
+            <div class="footer">
+            <p>
+              All prices and services on this website and in our reservation 
+              system are based on conditions at the time of publishing and are subject to change.<br> 
+              Please call to confirm services, availability and pricing.
+              <br><br> ©2022 Ying Yang  Digital Design Inc. All Rights Reserved. Privacy Policy
+            </p>
+            </div>
+        </footer>
+
+        <script src="./js/main_router.js" type="module" defer></script>
+        <script src="./js/main_lightbox.js" type="module" defer></script>
+        
+    </body>
+</html>

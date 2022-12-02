@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main_p.css">
+    <link href="css/main_home.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Package</title>
+</head>
+
+<body>
+    <header>
+        <p style="text-align: center;">
+            <object  data="images/Y_logo.svg" type="image/svg+xml" width="600px"></object>
+        </p>
+        <h1 class="hidden">Video</h1>    
+        <nav class="desktop"  id="navDesktop">
+            <h2 class="hidden">Main Navigation Desktop</h2>
+            
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a class="active" href="About.html">ABOUT</a></li>
+                <li><a href="Artworks.html">ARTWORKS</a></li>
+                <li><a href="package.html">PACKAGE</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+
+
+    <main id="app">
+        
+        <nav id="character-nav">
+            <ul class="characters">
+                <!-- prof thumb component goes here -->
+                <!-- pass the current data object into each new component using the :hero props binding -->
+                <metalpackagelink @loadlb="loadLightContainer" v-for="hero in heroData" :hero="hero"></metalpackagelink>
+            </ul>
+        </nav>
+
+        <!--<article>
+            <h3>Book A Test Drive</h3>
+            <p>Since our very beginnings, we’ve created cars that deliver a maximum experience with a minimal footprint. The very first Mini, built in 1959, was as fun to drive as it was fuel-efficient, and quickly became the urban car of choice as a result. Today, this very same principle is being applied to our electric mobility offering. With battery-powered driving technology that adds even more energy to the MINI driving experience, the all-electric MINI Cooper SE 3 door and MINI Countryman Plug-in Electric Hybrid are designed to electrify every drive and every day. And with lower emissions (including zero emissions in the MINI Cooper SE 3 door), they’re leading the charge towards a brighter, more sustainable future.</p>
+        </article>-->
+
+        <!-- Lightcontainer can go here -->
+        <lightcontainer @closelb="this.showLightContainer = false" v-if="showLightContainer" :hero="lightcontainerData"></lightcontainer>
+        <!-----end lightcontainer------>>
+    </main>
+    <!-- make this a sticky footer so it's always at the bottom-->
+  
+
+    <footer id="footer">
+        <h2 class="hidden">Footer</h2>
+        <div class="footer">
+        <p>
+          All prices and services on this website and in our reservation 
+          system are based on conditions at the time of publishing and are subject to change.<br> 
+          Please call to confirm services, availability and pricing.
+          <br><br> ©2022 Ying Yang  Digital Design Inc. All Rights Reserved. Privacy Policy
+        </p>
+        </div>
+    </footer>
+    
+    <!-- load script tags at the bottom -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main_p.js" type="module" defer></script>
+</body>
+</html>

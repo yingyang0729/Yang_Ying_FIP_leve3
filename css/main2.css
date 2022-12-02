@@ -1,0 +1,811 @@
+@charset "UTF-8";
+
+/*------------ General ------------*/  
+.hidden {
+    display: none;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+
+h1 {
+    margin: auto;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    margin-top: 20px;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    text-transform: uppercase;
+    line-height: 20pt;
+
+}
+
+a {
+    margin: auto;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 16pt;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12pt;
+    text-transform: uppercase;
+    margin: 0;
+    border-radius: 20px;
+    border: 0pt;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.blue {color:#0087CD;}
+
+.backBlue {
+    background-color: #0087CD;
+}
+
+.backBlack {
+    background-color: #000000;
+}
+
+.backgold {
+    background-color:#0087CD
+}
+
+/*------------ Nav Section Mobile------------*/ 
+#navMobile {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 428px;
+}
+
+#hamburger {width: 24px;}
+
+#arrow {width: 15px;}
+
+#logo  {width: 96px;}
+
+#number  {width: 20px;}
+
+#cart {width: 29px;}
+
+
+.desktop {display: none;}
+
+.navAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    font-size: 10pt;
+    color: #000000;
+    background-color:#0087CD
+}
+
+.navAbout li {
+    display: inline;
+    text-align: center;
+ }
+
+.navAbout li a {
+    font-size: 10pt;
+    color: #000000;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navAbout li a.active {
+    border-bottom: 3px solid #626262 ;
+    padding-bottom: 0.3em;
+    text-decoration: none;
+ }
+
+
+/*------------ Hero Section Mobile------------*/ 
+.buyBeer {
+    margin-top: 25px;
+    margin-bottom: 80px;
+    color:#0087CD
+}
+
+.margin {
+    margin-top: 25px;
+    margin-bottom: 80px ;
+}
+
+
+#heroM {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+    height: 194px;
+    background-image: url('../images/low/Mhome1_heroImage.jpg');
+	background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-position: center;
+}
+
+
+
+/*------------ Introduction Section Mobile------------*/ 
+#intro {
+    margin: 25px 40px 25px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introM {
+    max-width: 100%;
+    padding: 25px;
+ }
+
+/*------------ Our Team Section Mobile------------*/
+.ourTeamM {
+    height: 551px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+
+.arrowRight {
+    background-color: #ffffff;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.arrowleft {
+    background-color: #ffffff;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 551px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slide {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 250ms ease in;
+}
+
+.professional {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 551px;
+    width: 100%;
+    margin: 0;    
+}
+
+.professional p { 
+    color: #0087CD;
+    margin-top: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+.teamTitleM { 
+    color: #0087CD;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+ /*------------ Our Beers Section Mobile------------*/ 
+#ourBeers {
+    padding: 18px;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    background-color: #0087CD;
+ }
+
+.menu p {
+    color:#0087CD;
+    text-align: center;
+    font-size: 8pt;
+    margin: 0;
+}
+
+#beerNav {
+    padding: 18px;
+}
+
+#beerNav ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 428px;
+}
+
+#beerNav li {
+    width: 60px;
+    height: 100px;
+}
+
+#beersMobile {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 428px;
+}
+
+.photos { margin-bottom: 25px;}
+.title { margin-bottom: 10px;}
+
+
+ /*------------ Special Edition Section Mobile------------*/ 
+
+#promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#MspecialEdition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 428px;
+    margin-top: 40px;
+}
+
+
+.SpecialEdition {
+    padding: 25px;
+    background-color:#0087CD
+}
+
+/*------------ Footer Mobile---------------*/
+.footer {
+    padding: 12px;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    background-color: #0087CD;
+}
+
+@media screen and (min-width: 430px) {
+.mobile { display: none;}
+.desktop { display: flex;}
+
+/*------------ Nav Section 430px------------*/
+.logo { 
+    width: 6em;
+    display: inline;
+    margin-right: 50px;
+}
+.number { 
+    margin: 0;
+    width: 2em; 
+}
+
+.cart { 
+    margin: 0;
+    width: 3em; 
+}
+
+.margin-left { margin-left: 50px;}
+
+#navDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    background-color:#0087CD
+}
+
+ nav {
+     padding-top: 0em;
+     margin: 1em;
+     text-align: left;
+     justify-content: center;
+
+  }
+ 
+  nav ul {
+     display: flex;
+     align-items: stretch;
+     text-align: left;
+     font-size: 10pt;
+     
+ }
+ 
+  nav ul li{
+     display: inline;
+     text-align: left;
+     margin: 0;
+     padding-top: 0em;
+     padding-right: 3em;
+     margin-bottom: 0em;
+     font-size: 10pt;
+  }
+ 
+ 
+  nav li a {
+     color: #000000;
+     font-size: inherit;
+     text-decoration: none;
+     margin-bottom: 0em;
+     text-align: left;
+     align-self: center;
+     font-weight: 700;
+     margin-top: -7em;
+  }
+ 
+  nav li a:hover {
+     color: #DC0E32;
+  }
+ 
+  nav li a.active {
+     border-bottom: 3px solid #626262 ;
+     padding-bottom: 0.3em;
+     text-decoration: none;
+  }
+ 
+  nav li  {
+     display: inline;
+     text-align: left;
+     color: #ffff;
+     font-size: 1em;
+  }
+/*------------ Hero Section 430px------------*/
+#heroD {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center;
+    position: relative;
+    width: 1920px;
+    height: 518px;
+    background-image: url('../images/high/home1_heroImage.jpg');
+	background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-position: center;
+}
+
+
+.boxOneItem {
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+/*------------ Hero Section 430px------------*/
+#heroD {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center;
+    position: relative;
+    width: 1920px;
+    height: 518px;
+    background-image: url('../images/high/home1_heroImage.jpg');
+	background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-position: center;
+}
+
+
+.boxOneItem {
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+/*------------ Introduction Section 430px------------*/
+ #intro {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+}
+
+
+#intro2 img {
+    align-items: center;
+    margin: 30px auto 30px auto;
+    width: 100%;
+}
+
+.conteiner { 
+    margin:30px;
+    max-width: 550px;
+    min-width: 200px;
+}
+
+/*------------ Our Beers Section 430px------------*/
+#beersDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#beersDesktop img {
+    width: 100%;
+}
+
+/*------------ Our Team Section 430px------------*/
+
+#team {
+    display: flex;
+    flex-direction: column;
+}
+#ourTeamD {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: auto;
+}
+
+.teamImagesD { margin: 30px;}
+
+.teamImagesD img { 
+    cursor: pointer;
+    pointer-events: all;
+    width: 100%;
+}
+
+.teamImagesD p { 
+    color: #0087CD;
+    text-align: center;
+}
+
+
+
+.teamTitle { 
+    color: #0087CD;
+    text-align: center;
+}
+
+.teamText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: 30px auto 30px auto;
+    border-top: 3px solid #0087CD ;
+    color: #0087CD;
+}
+.blue {color:#0087CD;}
+
+.cris {display: none;}
+.liz {display: none;}
+.ying {display: none;}
+.tales {display: none;}
+.mat {display: none;}
+.immama {display: none;}
+.show {display: block;}
+
+.close {
+    margin-top: 10px;
+    width: 30%;
+    color:white;
+    background-color: #0087CD;
+}
+
+#close {
+    margin-top: 10px;
+    width: 30%;
+    color:white;
+    background-color: #0087CD;
+}
+
+/*------------ Special Edition Section 430px------------*/    
+#promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color:#0087CD
+
+}
+
+#MspecialEdition {display: none;}
+
+#DspecialEdition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#DspecialEdition img {width: 100%;}
+
+.SpecialEdition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: stretch;
+    padding: 60px;
+    background-color:#0087CD;
+}
+}
+
+@media screen and (min-width: 965px) {
+
+.mobile { display: none;}
+.desktop { display: flex;}
+
+/*------------ Nav Section ------------*/
+.logo { 
+    width: 6em;
+    display: inline;
+    margin-right: 50px;
+}
+.number { 
+    margin: 0;
+    width: 2em; 
+}
+
+.cart { 
+    margin: 0;
+    width: 3em; 
+}
+
+.margin-left { margin-left: 50px;}
+
+#navDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ nav {
+     padding-top: 0em;
+     margin: 1em;
+     text-align: left;
+     justify-content: center;
+
+  }
+ 
+  nav ul {
+     display: flex;
+     align-items: stretch;
+     text-align: left;
+     font-size: 12pt;
+ }
+ 
+  nav ul li{
+     display: inline;
+     text-align: left;
+     margin: 0;
+     padding-top: 0em;
+     padding-right: 3em;
+     margin-bottom: 0em;
+     font-size: 12pt;
+  }
+ 
+ 
+  nav li a {
+     color: #000000;
+     font-size: inherit;
+     text-decoration: none;
+     margin-bottom: 0em;
+     text-align: left;
+     align-self: center;
+     font-weight: 700;
+     margin-top: -5em;
+     font-size: 12pt;
+  }
+ 
+  nav li a:hover {
+     color: #DC0E32;
+  }
+ 
+  nav li a.active {
+     border-bottom: 3px solid #626262 ;
+     padding-bottom: 0.2em;
+     text-decoration: none;
+  }
+ 
+  nav li  {
+     display: inline;
+     text-align: left;
+     color: #ffff;
+     font-size: 1em;
+  }
+
+  .navAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    font-size: 12pt;
+    color: #000000;
+    background-color:#0087CD
+}
+
+.navAbout li {
+    display: inline;
+    text-align: center;
+    font-size: 12pt;
+ }
+
+.navAbout li a {
+    font-size: 12pt;
+    color: #000000;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navAbout li a.active {
+    border-bottom: 3px solid #626262 ;
+    padding-bottom: 0.3em;
+    text-decoration: none;
+    font-size: 12pt;
+ }
+/*------------ Hero Section ------------*/
+#heroD {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center;
+    position: relative;
+    width: 1920px;
+    height: 518px;
+    background-image: url('../images/high/home1_heroImage.jpg');
+	background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-position: center;
+}
+
+
+.boxOneItem {
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+/*------------ Introduction Section ------------*/
+#intro {
+    margin: 25px auto 25px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+}
+
+#intro2 {
+    margin: 30px 30px 30px auto;
+    max-width: 100%;
+}
+
+.conteiner { 
+    margin: 30px 30px 30px auto;
+    max-width: 550px;
+    min-width: 200px;
+}
+
+/*------------ Our Beers Section ------------*/
+#beersDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#beersDesktop img {
+    width: 100%;
+}
+
+/*------------ Special Edition Section ------------*/    
+#promo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width: 100%;
+    background-color:#0087CD;
+
+}
+
+#MspecialEdition {display: none;}
+
+#DspecialEdition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#DspecialEdition img {width: 100%;}
+
+.SpecialEdition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: stretch;
+    padding: 60px;
+    background-color:#0087CD;
+}
+
+}

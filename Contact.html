@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Form with Vue and POST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+    <link href="css/main_home.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Contact</title>
+</head>
+<body>
+    <main id="app">
+        <p style="text-align: center;">
+            <object  data="images/Y_logo.svg" type="image/svg+xml" width="600px"></object>
+        </p>
+
+        <nav class="desktop"  id="navDesktop">
+            <h2 class="hidden">Main Navigation Desktop</h2>
+            
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a class="active" href="About.html">ABOUT</a></li>
+                <li><a href="Artworks.html">ARTWORKS</a></li>
+                <li><a href="package.html">PACKAGE</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+            
+        </nav>
+        
+        <div class="contactform" v-model="box">
+            <h1 class="hidden">Mail Reference for API Processing</h1>
+            <h2>Contact Form</h2>
+            <p>Leave your message here.</p>
+
+            <form action="mail.php" method="POST" id="mail-form" class="informationform" >
+                <div class="comments" v-if="textMessage">
+                    <p>The message has been sent.</p>
+                    <i class="fas fa-paper-plane"></i>   
+                </div> 
+                <ul>
+                    <li>
+                    <label for="firstname">First Name / Given Name</label>
+                    <div class="textInformation" v-if="givenname">
+                        <p>Invalid first name/given name.</p>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                    </div>
+                    <input class="input" v-model="form.firstname" ref="fname" type="text" id="firstname" name="firstname" required="required">
+                    </li>
+
+                    <li>
+                    <label for="lastname">Last Name / Family Name</label>
+                    <div class="textInformation" v-if="surname">
+                        <p>Invalid last name / family name.</p>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    <input class="input" v-model="form.lastname" ref="lname" type="text" id="lastname" name="lastname" required="required">
+                    </li>
+
+                    <li>
+                    <label for="email">E-mail</label>
+                    <div class="textInformation" v-if="emailaddress">
+                        <p>Invalid e-mail address!</p>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    <input class="input" v-model="form.email" ref="email" type="email" id="email" name="email" required="required">
+                    </li>
+
+                    <li>
+                    <label for="message">Message / comment</label>
+                    <div class="textInformation" v-if="noteMessage">
+                        <p>Invalid message / comment.</p>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    
+                    <textarea class="input" v-model="form.text" ref="message" name="message" id="message" cols="30" rows="10" ></textarea>
+                    </li>
+
+                    <li>
+                    <button @click.prevent="processMail" type="submit" class="submit" value="Go!" name="send">
+                        Send
+                    </button>
+                  
+                    </li>
+                </ul>                          
+            </form>
+        </div>  
+    </main>
+
+    <footer id="footer">
+        <h2 class="hidden">Footer</h2>
+        <div class="footer">
+        <p>
+          All prices and services on this website and in our reservation 
+          system are based on conditions at the time of publishing and are subject to change.<br> 
+          Please call to confirm services, availability and pricing.
+          <br><br> ©2022 Ying Yang  Digital Design Inc. All Rights Reserved. Privacy Policy
+        </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main_contact.js" type="module" defer></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.lightcontainer {
+  
+    //display: none;
+  
+    width: 100vw;
+    height: 100vh;
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    background-color: #fff;
+    background-image: url('../images/Cap_LB_Bg.png');
+    background-repeat: no-repeat;
+  
+    background-position: 40px bottom;
+    background-size: 55vh;
+  
+    z-index: 5000;
+}
+
+.lightcontainer_close { 
+    position: relative; 
+    top: 20px;
+    left: 95%;
+    cursor: pointer;
+  
+    width: 25px;
+  }
+  
+  .lightcontainer_close:hover { 
+    opacity: 0.7; 
+    transform: scale(-1, 1); 
+  }
+  
+  .lightcontainer article { 
+    width: 55%; 
+    margin-left: 40%;
+    padding-top: 50px;
+  }
+  
+  .lb_text, .lb_heading { 
+    text-align: left; 
+    color: #5e7f57;
+  }
+  
+  .lb_text { 
+    line-height: 1.6 !important;
+    margin: 30px;
+    padding: 2em;
+    table-layout: fixed;
+	  word-wrap: break-all;
+	  word-break: normal;
+	  overflow-y: scroll;
+    color: #5e7f57;
+  }
